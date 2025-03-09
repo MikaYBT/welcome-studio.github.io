@@ -9,12 +9,11 @@ nav{
 .navigation{
     display: flex;
     max-width: var(--contentMaxWidth);
-    width: 100%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
     padding: 32px 16px 0 16px;
+    height: 70px;
 }
 
 .navigation__image{
@@ -30,8 +29,34 @@ nav{
     gap: 32.313px;
     flex-shrink: 0;
     align-items: center;
+    opacity: 1;
+    transition: gap 0.2s;
 }
 
 .navigation__menu--action{
     padding: 0 0 0 5.55vw;
+}
+
+.navigation__bar{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .navigation__menu{
+        gap: 16px;
+    }
+    .navigation__menu--action{
+        padding: 0;
+        transition: 0.2s;
+    }
+}
+
+@media (max-width:768px) {
+    .navigation__menu{
+        opacity: 0;
+        display: none;
+    }
+    .navigation__bar{
+        display: flex;
+    }
 }

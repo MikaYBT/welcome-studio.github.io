@@ -31,51 +31,66 @@ h2{
     display: flex;
     align-items: center;
     color: #FFF;
-    transition: 0.3s;
+    transition: 0.2s;
+    align-self: flex-start;
+    text-decoration: underline rgba(0, 0, 0, 0);
+    text-wrap: nowrap;
 }
 
 .button:hover{
-    text-decoration: underline;
-    transition: 0.3s;
+    text-decoration: underline rgba(255, 255, 255, 100);
+    transition: 0.2s;
 }
 
 .button--filled{
+    text-decoration: none;
     padding: 17px 25px;
     border-radius: 64px;
     background: #5B6CFF;
     box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.25) inset;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .button--bordered{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    text-decoration: none;
     padding: 11px 25px;
     border-radius: 64px;
     border: 1px solid rgba(255, 255, 255, 0.20);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .button--bordered:hover{
+    text-decoration: none;
     background-color: #FFF;
     color: #000;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .button__icon{
     width: 24px;
 }
 
-.button--bordered:hover .button__icon{
-    filter: invert();
+.button--icon-only{
     transition: 0.3s;
 }
 
+.button--bordered:hover .button__icon{
+    filter: invert();
+    transition: 0.2s;
+}
+
 .button--filled:hover{
+    text-decoration: none;
     background-color: #FFF;
     color: #000;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .button--small{
     color: rgba(255, 255, 255, 0.65);
     font-size: 13px;
 }
+

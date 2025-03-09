@@ -7,8 +7,7 @@ footer{
 .footer{
     padding: 112px 16px 0 16px;
     margin: 0 auto;
-    max-width: 1280px;
-    width: 100%;
+    max-width: var(--contentMaxWidth);
     color: rgba(255, 255, 255, 0.65);
     font-size: 13px;
 }
@@ -51,9 +50,8 @@ footer{
 
 .footer__information{
     margin: 0 auto;
-    padding: 28px 0;
-    max-width: 1280px;
-    width: 100%;
+    padding: 28px 16px;
+    max-width: var(--contentMaxWidth);
     display: flex;
     justify-content: space-between;   
 }
@@ -66,4 +64,26 @@ footer{
 
 .footer__list--icons{
     gap: 16px;
+    padding: 0 0 0 16px;
+}
+
+@media (max-width: 425px) {
+    .footer__logo{
+        width: 105px;
+        margin: 0 0 32px 0;
+    }
+    .footer__menu{
+        flex-direction: column;
+        padding: 0 0 80px 0;
+    } 
+    .footer__menu-lists{
+        flex-direction: column;
+    }
+    .footer__list--icons{
+        padding: 0;
+    }
+    .footer__information{
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
 }
