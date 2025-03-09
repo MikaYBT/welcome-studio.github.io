@@ -69,7 +69,6 @@ main{
 
 .teams__text{
     color: rgba(255, 255, 255, 0.65);
-
     max-width: 404px;
 }
 
@@ -115,9 +114,21 @@ main{
 }
 
 .experience__grid-content{
-    background-color: aqua;
+    background-color: rgb(171, 171, 171);
     width: 100%;
     height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    transition: 0.3s;
+}
+
+.experience__grid-content:hover{
+    filter: contrast(0.9);
+    transition: 0.3s;
 }
 
 .experience__grid-content--full-row{
@@ -143,4 +154,50 @@ main{
 .experience__grid-content--2-half-row{
     grid-column-start: 7;
     grid-column-end: 13;
+}
+
+.experience__grid-content--overlays{
+    background: url(images/backgrounds/overlays.png) no-repeat;
+}
+
+.experience__grid-content--polls{
+    background: url(images/backgrounds/polls.png) no-repeat;
+}
+
+.experience__grid-content--video-quallity{
+    background: url(images/backgrounds/video\ quallity.png) no-repeat;
+}
+
+.experience__grid-content--qna{
+    background: url(images/backgrounds/q&a.png) no-repeat;
+}
+
+.experience__grid-content--chat{
+    background: url(images/backgrounds/chat.png) no-repeat;
+}
+
+
+.experience__grid-content-header{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px; 
+    letter-spacing: -0.2px; 
+    max-width: 336px;
+}
+
+.experience__grid-content-text{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px; 
+    max-width: 336px;
+}
+
+.experience__grid-content-header--inverted{
+    color: #fff;
+}
+
+.experience__grid-content-text--inverted{
+    color: rgba(225, 225, 225, 0.70);
 }
