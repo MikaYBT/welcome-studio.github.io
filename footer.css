@@ -2,6 +2,7 @@ footer{
     background: #000;
     width: 100%;
     font-family: Inter;
+    overflow: hidden
 }
 
 .footer{
