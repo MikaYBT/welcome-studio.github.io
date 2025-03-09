@@ -67,7 +67,7 @@ footer{
     padding: 0 0 0 16px;
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
     .footer__logo{
         width: 105px;
         margin: 0 0 32px 0;

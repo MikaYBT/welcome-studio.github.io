@@ -41,7 +41,7 @@ nav{
     display: none;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .navigation__menu{
         gap: 16px;
     }
@@ -51,7 +51,7 @@ nav{
     }
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
     .navigation__menu{
         opacity: 0;
         display: none;
