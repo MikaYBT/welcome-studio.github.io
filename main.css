@@ -304,6 +304,117 @@ main{
     color: rgba(225, 225, 225, 0.70);
 }
 
+.revenue{
+    background: #F5F5F5;;
+}
+
+.revenue__content{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 144px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+    gap: 32px;
+}
+
+.revenue__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1px;
+    transition: 0.2s;
+}
+
+.revenue__text > p:nth-of-type(1){
+    font-size: 59px;
+    padding: 20px 0 20px 0;
+    transition: 0.2s;
+}
+.revenue__text > p:nth-of-type(2){
+    font-size: 18px;
+    transition: 0.2s;
+}
+.revenue__text > p:nth-of-type(3){
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.revenue__line{
+    max-width: 421px;
+    border: rgba(0, 0, 0, 0.10) 1px solid;
+    width: 100%;
+    margin: 24px 0;
+}
+
+.revenue__header{
+    display: flex;
+    flex-direction: column ;
+}
+
+.singup{
+    background: url(images/backgrounds/Singup\ BG.png) no-repeat bottom center;
+    background-size: 3000px;
+}
+
+.singup__content{
+    margin: 0 auto;
+    padding: 80px 16px;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.singup__information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+
+}
+
+.singup__header{
+    color: #FFF;
+}
+
+.singup__text{
+    color: #FFF;
+    font-size: 22px;
+}
+
+.singup__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 510px;
+    width: 100%;
+    align-content: end;
+    height: 321px;
+    justify-content: end;
+}
+
+.singup__input{
+    border: none;
+    border-bottom: 2px solid #FFF;
+    background: none;
+    font-family: Inter;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 18px;
+}
+
+.singup__sumbit{
+    background: none;
+    border: none;
+}
+
+.singup__sumbit::after{
+    content: "hello";
+    position: absolute;
+    color: #fff;
+}
+
 @media only screen and (max-width: 1440px) {
     .experience__header-focus{
         font-size: 19vw;
@@ -335,9 +446,15 @@ main{
         padding: 200px 16px 700px 16px;
         transition: 0.2s;
     }
+    .features__content{
+        padding: 114px 16px 128px 16px;
+    }
     .features__grid{
         grid-template-rows: 700px 500px;
         transition: 0.2s;
+    }
+    .revenue__content{
+        padding: 80px 16px;
     }
 }
 
@@ -388,6 +505,28 @@ main{
     .stories{
         background-position: bottom 0px right -120px;
     }
+    .revenue__content{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .revenue__information{
+        width: 100%;
+        text-align: center;
+    }
+    .revenue__line{
+        max-width: 100%;
+    }
+    .revenue__image{
+        width: 150px;
+    }
+    .singup__content{
+        flex-direction: column;
+    }
+    .singup__form{
+        height: 150px;
+        max-width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 425px) {
@@ -411,6 +550,9 @@ main{
     .features__header{
         font-size: 30px;
         transition: 0.2s;
+    }
+    .revenue__text > p:nth-of-type(1){
+        font-size: 30px;
     }
     
 }
